@@ -1,11 +1,54 @@
 /* Basic Tags */
+body{
+  font-family: 'Bitter', serif;
+  margin: 0px;
+  color: #132238;
+  
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
 
 /* Nav Bar */
+.logo {
+  padding: 10px;
+}
+.nav-container{
+  background-color: #364F68;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
 
+.nav-bar {
+  display: flex;
+  align-self: center;
+  margin-right: 11px;
+}
+
+nav a {
+  margin-right: 12px;
+}
 /* Intro About Me */
+  .about-me img{
+    width:100%;
+  }
 
 /* Services */
 
 /* Testimonial */
-
+.test-container{
+  background-color: #364F68;
+  color: #EAF0F6;
+}
 /* Contact Me */
+#contact-me{
+  
+}
+
+
+
+color: #EAF0F6;
+  color:#98CCD4;
+  //color: #364F68;
