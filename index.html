@@ -13,6 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <!-- Google Fonts -->
@@ -44,25 +45,54 @@
   </section>
 <!-- Services -->
   <section id="services">
-    <div>
-      <img src="" alt="">
-      <p>Cake jelly beans brownie wafer donut marshmallow apple pie gummi bears marshmallow. Apple pie candy canes cake gingerbread bear claw cake. Fruitcake halvah caramels. Jelly jujubes pastry jujubes sesame snaps cake. Icing cotton candy chupa chups candy canes danish liquorice croissant brownie. Donut jelly beans topping candy.</p>
-    </div>
-    <div>
-      <img src="" alt="">
-      <p>Danish toffee toffee pudding gummies. Toffee jelly candy sesame snaps oat cake sweet tootsie roll cake lollipop. Cake bear claw dragée sweet roll. Soufflé cupcake cotton candy marshmallow bear claw chupa chups toffee jujubes wafer. Icing cupcake sugar plum sugar plum fruitcake chocolate cake. Chocolate macaroon toffee sugar plum dragée. Cake dessert chocolate cake liquorice pie macaroon bear claw gummies</p>
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-6 col-sm-12">
+          <i class="fas fa-bullseye fa-3x services-icon"></i>
+          <p>Cake jelly beans brownie wafer donut marshmallow apple pie gummi bears marshmallow. Apple pie candy canes cake gingerbread bear claw cake. Fruitcake halvah caramels. Jelly jujubes pastry jujubes sesame snaps cake. </p>
+        </div>
+        <div class="col col-lg-6 col-sm-12">
+          <i class="far fa-lightbulb fa-3x services-icon"></i>
+          <p>Cake jelly beans brownie wafer donut marshmallow apple pie gummi bears marshmallow. Apple pie candy canes cake gingerbread bear claw cake. Fruitcake halvah caramels. Jelly jujubes pastry jujubes sesame snaps cake. </p>
+        </div>
+      </div>
     </div>
   </section>
 <!-- Testimonial -->
   <section id="testimonial">
     <div class="test-container">
-      <div class="test1">
-        <p> I love cake bonbon chocolate cake I love lollipop. Chupa chups cookie cookie topping ice cream soufflé. Jelly-o pie I love soufflé croissant tiramisu croissant toffee. Pudding soufflé toffee chocolate bar sugar plum.</p>
-        <img src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription01&hairColor=Red&facialHairType=BeardLight&facialHairColor=Red&clotheType=ShirtVNeck&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light" alt="male-avatar">
-      </div>
-      <div class="test 2">
-        <p> I love tiramisu marshmallow bear claw chupa chups. Topping croissant carrot cake danish gummies. Cake gingerbread pie I love tiramisu lemon drops halvah. Candy halvah cake donut tart sweet roll gummies.</p>
-        <img src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairBigHair&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=PastelGreen&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=DarkBrown" alt="female-avatar">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>I love cake bonbon chocolate cake I love lollipop. 
+            Chupa chups cookie cookie topping ice cream soufflé. 
+            Jelly-o pie I love soufflé croissant tiramisu croissant toffee. 
+            Pudding soufflé toffee chocolate bar sugar plum.</p>
+            <img class="d-block w-100 testimony-img" src="/images/test.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <p> I love tiramisu marshmallow bear claw chupa chups. 
+              Topping croissant carrot cake danish gummies. 
+              Cake gingerbread pie I love tiramisu lemon drops halvah. 
+              Candy halvah cake donut tart sweet roll gummies.</p>
+            <img class="d-block w-100 testimony-img" src="" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <p> I love tiramisu marshmallow bear claw chupa chups. 
+              Topping croissant carrot cake danish gummies. 
+              Cake gingerbread pie I love tiramisu lemon drops halvah. 
+              Candy halvah cake donut tart sweet roll gummies.</p>
+            <img class="d-block w-100 testimony-img" src="" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
   </section>
@@ -75,3 +105,7 @@
 
 </body>
 </html>
+
+<!-- color: #EAF0F6;
+  color:#98CCD4;
+  //color: #364F68; -->

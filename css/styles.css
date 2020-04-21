@@ -6,16 +6,21 @@ body{
   
 }
 a {
-  text-decoration: none;
+  
   color: #fff;
 }
+p {
+ line-height: 1.5;
+}
+
+
 
 /* Nav Bar */
 .logo {
   padding: 10px;
 }
 .nav-container{
-  background-color: #364F68;
+  background-color: #132238;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -27,28 +32,44 @@ a {
   margin-right: 11px;
 }
 
-nav a {
+.nav-bar a {
+  text-decoration: none;
   margin-right: 12px;
 }
+
 /* Intro About Me */
   .about-me img{
     width:100%;
+    margin-bottom: 70px;
   }
 
 /* Services */
-
-/* Testimonial */
-.test-container{
-  background-color: #364F68;
-  color: #EAF0F6;
+.services{
+  position: relative;
 }
-/* Contact Me */
-#contact-me{
+.services-icon {
+  color: #98CCD4;
+  margin: 30px 0px;
+  margin-left: 45%;
   
 }
+.row p {
+  margin-bottom: 100px;
+}
+/* Testimonial */
+.test-container p {
+  font-size: 2rem;
+  text-align: center;
+
+
+}
+.test-container{
+  background-color: #132238;
+  color: #EAF0F6;
+}
+
+
+/* Contact Me */
 
 
 
-color: #EAF0F6;
-  color:#98CCD4;
-  //color: #364F68;
