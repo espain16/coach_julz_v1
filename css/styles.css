@@ -56,11 +56,16 @@ p {
 .row p {
   margin-bottom: 100px;
 }
-/* Testimonial */
-.test-container p {
-  font-size: 2rem;
-  text-align: center;
 
+/* Testimonial */
+.carousel-item {
+  padding: 35px;
+  margin: 60px 0px;
+}
+.test-container p {
+  font-size: 1rem;
+  text-align: center;
+  /*padding: 20px;*/
 
 }
 .test-container{
@@ -68,6 +73,12 @@ p {
   color: #EAF0F6;
 }
 
+.testimony-img{
+  width: 15%;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 5%;
+}
 
 /* Contact Me */
 
