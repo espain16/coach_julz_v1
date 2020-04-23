@@ -81,6 +81,19 @@ p {
 }
 
 /* Contact Me */
+.copyright {
+  margin-right: auto;
+  margin-left: 5%;
+}
+.contact-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4%;
+  color: #98CCD4;
+  align-items: flex-end;
+  
+}
 
-
-
+.contact-icons i {
+  padding: 10px;
+}
