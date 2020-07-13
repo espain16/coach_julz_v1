@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coach-Julz</title>
+  <title>Coach Julz</title>
 
   <!-- Style Sheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,6 +13,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <!-- Javascript -->
+  <script src="homePage.js"></script>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
@@ -30,9 +34,10 @@
       </div>
       <div class="nav-bar">
         <nav>
-          <a href="#services">Services</a>
-          <a href="#testimonial">Testimonals</a>
-          <a href="#contact-me">Contact Me</a>
+          <a href="#services">SERVICES</a>
+          <a href="#testimonial">TESTIMONIALS</a>
+          <a href="#contact-me">CONTACT ME</a>
+          <button class="athlete-btn" id="form-btn" onclick="openForm()">ATHLETE QUESTIONNAIRE</button>
         </nav>
       </div>
     </div>
@@ -40,49 +45,51 @@
 <!-- Intro About Me -->
   <section id="cta">
     <div class="about-me">
-      <img src="/images/dog-glasses.jpg" alt="dog wearing black framed glasses">
+      <img src="/images/bench-photo.jpg" alt="women sitting on a bench holding a basketball">
     </div>
   </section>
 <!-- Services -->
   <section id="services">
     <div class="container">
       <div class="row">
-        <div class="col col-lg-6 col-md-12 col-sm-12">
+        <div class="col-lg-6 col-md-12 col-sm-12">
           <i class="fas fa-bullseye fa-3x services-icon"></i>
           <p>Cake jelly beans brownie wafer donut marshmallow apple pie gummi bears marshmallow. Apple pie candy canes cake gingerbread bear claw cake. Fruitcake halvah caramels. Jelly jujubes pastry jujubes sesame snaps cake. </p>
         </div>
-        <div class="col col-lg-6 col-md-12 col-sm-12">
+        <div class="col-lg-6 col-md-12 col-sm-12">
           <i class="far fa-lightbulb fa-3x services-icon"></i>
           <p>Cake jelly beans brownie wafer donut marshmallow apple pie gummi bears marshmallow. Apple pie candy canes cake gingerbread bear claw cake. Fruitcake halvah caramels. Jelly jujubes pastry jujubes sesame snaps cake. </p>
         </div>
       </div>
     </div>
   </section>
+
 <!-- Testimonial -->
   <section id="testimonial">
     <div class="test-container">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <p>I love cake bonbon chocolate cake I love lollipop. 
-            Chupa chups cookie cookie topping ice cream soufflé. 
-            Jelly-o pie I love soufflé croissant tiramisu croissant toffee. 
-            Pudding soufflé toffee chocolate bar sugar plum.</p>
-            <img class="d-block  testimony-img" src="./images/brownhairavatar.jpg" alt="First slide">
+            <p>"Ever since my daughter was in elementary school she has loved to play basketball. We were referred to Coach Julz by another player from Sacramento. From day one she was accepted and began bonding with coaches. The highlights of this program start with Coach Julz. She is a great communicator. Her commitment to creating the opportunity for young girls to reach a high level of competitive basketball is apparent. If your daughter has dreams of playing basketball in college be sure to check out Coach Julz. By far the most complete program for developing and elite girl’s basketball in the Sacramento area."<br> - J . L .</p>
+            
           </div>
           <div class="carousel-item">
-            <p> I love tiramisu marshmallow bear claw chupa chups. 
-              Topping croissant carrot cake danish gummies. 
-              Cake gingerbread pie I love tiramisu lemon drops halvah. 
-              Candy halvah cake donut tart sweet roll gummies.</p>
-            <img class="d-block testimony-img" src="./images/dog-img.jpg" alt="Second slide">
+            <p> Coach Julz is easy to talk to about what skills and part of my game I need to work on. She is able to identify exactly what I need to do to improve the skill or mechanics. I like that she listens and then has the perfect advice and training skill to help and then takes it up and she puts something in that gives me even more and that feels really good. I was able to take what we did in my training sessions and directly apply it to my next game. Coach Julz helped me improve my shot by breaking it down into more pieces than I could imagine and building a foundation with each piece so that I could practice each part before putting the skill together. She helped me build a good outside shot that I could use in my games. Working with Coach Julz also gave me more confidence in my games. Coach Julz is an athlete and a coach and I like how she relates to me as an athlete and a person and how she responds to what I need both mentally and with my physical performance. Training with Coach Julz feels good because not only am I improving in skill and overall fitness but also she believes in me as an athlete.</p>
+            
           </div>
           <div class="carousel-item">
-            <p> I love tiramisu marshmallow bear claw chupa chups. 
-              Topping croissant carrot cake danish gummies. 
-              Cake gingerbread pie I love tiramisu lemon drops halvah. 
-              Candy halvah cake donut tart sweet roll gummies.</p>
-            <img class="d-block  testimony-img" src="./images/lady-img.jpg" alt="Third slide">
+            <p> "As a Division II assistant coach, I am constantly receiving emails, phone calls and social media messages about players that want to play for our program. The promoters for these student athletes are typically high school coaches, club coaches, parents, the players themselves, and recruiting services that have never seen a Division II women's basketball game and have no idea what the level of play is like. It is nearly impossible for them to recommend a player that could truly be a good fit for our program without knowing our level of play, the style we play, and type of player that our coaching staff looks for in our recruits. This is where Julz separates herself. She played at the junior college level and worked her way to a Division I scholarship at Southern Utah. She has been a head coach at the junior college level for two different programs, both of which produced many Division I/II/III and NAIA level players, and therefore she can accurately gauge the level of each player. She has built a relationship with us, and many coaching staffs across the west coast, as she helped her athletes find their best fit at the next level. I have truly appreciated Julz's honesty about potential student-athletes, as she knows what we are looking for and what is important to us personally and our program. Julz can speak about a player's skill level, but also communicates about her academic ability, work ethic, leadership, sportsmanship and the many other attributes that are so crucial to know before signing a student-athlete at any level. I highly recommend Julz and her recruiting service. She understands how to find the "best fit" for both the athlete and the college program and I look forward to who she recommends for us next!"</p>
+            
+          </div>
+          <div class="carousel-item">
+            <p>
+              Training with Coach Julz helped elevate our daughter’s entire basketball game. She not only gained the skills needed to be successful on the court she learned more about the mental part of the game and is becoming a more focused player. After completing a training session she felt like she gained the skills and knowledge that she could bring to her next game. Coach Julz approached the workouts physically and mentally. She is skillful in giving the right amount of teaching, then letting the player work and figure out on their own what they need. Because she responds in a kind, thoughtful manner to questions my daughter is able to ask the questions about how to do a skill or play without feeling intimidated. Coach Julz is a careful listener and responds to the questions with advice that helps my daughter get better. She then goes beyond by to get the most out of that player. Coach Julz is kind, approachable and her workouts met my daughter where she needed to be – the right amount of teaching and going that little extra but leaving her feel successful, more confident, that she has value, and ready to get into the next game.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <p>
+              “Our experience with Coach Julz has been outstanding. Initially we contacted Coach Julz to work with our daughter on skill development. We saw immediate improvement in our daughter’s shooting and ball handling ability.  My daughter loves working with Coach Julz. Coach Julz teaches the game in a manner that creates confidence in the minds of all her players. Not only did the individual players develop but the team improved every day of the season. My daughter’s goal is to play basketball in college. I am confident that my daughter will continue to maximize her abilities under the guidance of Coach Julz and be able to reach her goal.”<br>- D . P .
+            </p>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -97,90 +104,104 @@
     </div>
   </section>
 <!-- Form -->
+  <div>
+    
+
+  </div>
+  <div class="form-style">
   <section id="form">
+    
     <form class="parentQuestion">
-      <label>First name:</label>
-      <input type="text">
+      <h2>Student Athlete Questionnaire</h2>
+      <p class="form-description">We here at ______ strive to provide student athletes with the best experience possible. In order to do this, we ask you to please answer the following questions below. </p>
+      <!-- User general input -->
+      <label>First name:</label><br>
+      <input class="user-first"type="text"><br>
 
-      <label>Last name:</label>
-      <input type="text">
+      <label>Last name:</label><br>
+      <input class="user-last"type="text"><br>
 
-      <label>Address:</label>
-      <input type="text">
-
-      <label>City, State & Zip:</label>
-      <input type="text">
-
-      <label>Mobile</label>
-      <input type="tel">
-
-      <label>Email:</label>
-      <input type="email">
-
-      <label>How did you hear about us ?</label>
-      <textarea></textarea>
-
-      <label>What do you hope to get out of using us?</label>
-      <textarea></textarea>
-
-      <label>How important is it for your student to obtain a college scholarship?</label>
-      <textarea></textarea>
+      <label>Address:</label><br>
+      <input class="user-address"type="text"><br>
       
-      <label>How important is it for your student to obtain financial aid?</label>
-      <textarea></textarea>
-      
-      <label>If she/he does not receive a scholarship, will it affect where your student attends college ? Please explain:</label>
-      <textarea></textarea>
-      
-      <label>Realistically, where do you see your student athlete stacking up compared to other athletes in their sport? Please explain:</label>
-      <textarea></textarea>
-      
-      <label>Where would you like your student athlete to go to college ?</label>
-      <textarea></textarea>
+      <label>City, State & Zip:</label><br>
+      <input class="user-city"type="text"><br>
 
-      <label>Which athletic Divisions(DI, DII, DIII, or NAIA) is your student athlete interested in? Please list all that apply:</label>
-      <textarea></textarea>
+      <label>Mobile</label><br>
+      <input class="user-num"type="tel"><br>
 
-      <label></label>
-      <select>
+      <label>Email:</label><br>
+      <input class="user-email"type="email"><br>
+
+      <!-- Company Based Questions -->
+
+      <label>How did you hear about us ?</label><br>
+      <textarea></textarea><br>
+
+      <label>What do you hope to get out of using us?</label><br>
+      <textarea></textarea><br>
+
+      <!-- Getting to know the athlete -->
+
+      <label>How important is it for your student to obtain a college scholarship?</label><br>
+      <textarea></textarea><br>
+      
+      <label>How important is it for your student to obtain financial aid?</label><br>
+      <textarea></textarea><br>
+      
+      <label>If she/he does not receive a scholarship, will it affect where your student attends college ? Please explain:</label><br>
+      <textarea></textarea><br>
+      
+      <label>Realistically, where do you see your student athlete stacking up compared to other athletes in their sport? Please explain:</label><br>
+      <textarea></textarea><br>
+      
+      <label>Where would you like your student athlete to go to college ?</label><br>
+      <textarea></textarea><br>
+
+      <label>Which athletic Divisions(DI, DII, DIII, or NAIA) is your student athlete interested in? Please list all that apply:</label><br>
+      <textarea></textarea><br>
+
+      <label>Are you open to attending a school out of state ?</label><br>
+      <select class="dropdown-select">
         <option>Yes</option>
         <option>No</option>
-      </select>
+      </select><br>
 
-      <label></label>
-      <select>
+      <label>Are you aware of the acceptance requirements for the schools of interest ?</label><br>
+      <select class="dropdown-select">
         <option>Yes</option>
         <option>No</option>
-      </select>
+      </select><br>
 
-      <label></label>
-      <select>
+      <label>Do you have highlights or game film of yourself ?</label><br>
+      <select class="dropdown-select">
         <option>Yes</option>
         <option>No</option>
-      </select>
+      </select><br>
 
-      <label></label>
-      <select>
+      <label>Are you willing to learn about the recruiting process to market yourself to schools and coaches of interest ?</label><br>
+      <select class="dropdown-select">
         <option>Yes</option>
         <option>No</option>
-      </select>
+      </select><br>
 
-      <label>How did you hear about us ?</label>
-      <textarea></textarea>
+      <label>What about the recruiting process is a concern for you at this time ?</label><br>
+      <textarea></textarea><br>
 
-      <label>What do you hope to get out of using us?</label>
-      <textarea></textarea>
-
-    </form>
-  </section>
+      <label>What steps have you taken in regards to your own recruiting process?</label><br>
+      <textarea></textarea><br>
+      <button>Submit</button>
+      </form>
+    </section>
+  </div>
 <!-- Contact Me -->
   <section id="contact-me">
     <div class="contact-icons">
       <p class="copyright">&copy;J.ALLENDER</p>
-      <i class="fas fa-2x fa-envelope icons"></i>
-      <i class="fab fa-2x fa-instagram icons"></i>
-      <i class="fab fa-2x fa-linkedin icons"></i>
-      <i class="fas fa-2x fa-podcast"></i>
+      <a href="mailto:courtsidewithjulz@gmail.com"><i class="fas fa-2x fa-envelope icons"></i></a>
+      <a href="https://www.instagram.com/courtsidewithjulz/"><i class="fab fa-2x fa-instagram icons"></i></a>
+      <a href="https://www.linkedin.com/in/juliaallender/"><i class="fab fa-2x fa-linkedin icons"></i></a>
+      <a><i class="fas fa-2x fa-podcast"></i></a>
 
     </div>
   </section>

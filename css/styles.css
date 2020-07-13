@@ -37,6 +37,12 @@ p {
   margin-right: 12px;
 }
 
+.athlete-btn {
+  color: #98CCD4;
+  background-color: #132238;
+  border: 2px solid #98CCD4;
+}
+
 /* Intro About Me */
   .about-me img{
     width:100%;
@@ -53,19 +59,23 @@ p {
   margin-left: 45%;
   
 }
+
 .row p {
   margin-bottom: 100px;
 }
 
 /* Testimonial */
+
 .carousel-item {
   padding: 35px;
   margin: 60px 0px;
+  width: 75%;
+  margin-left: 13%;
+
 }
 .test-container p {
   font-size: 1rem;
   text-align: center;
-  /*padding: 20px;*/
 
 }
 .test-container{
@@ -79,26 +89,66 @@ p {
   margin: auto;
   margin-top: 5%;
 }
+
+.carousel-control-prev {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+.carousel-control-next {
+  margin-right: 8%;
+  margin-top: 5%;
+}
 /* Form */
-.parentQuestion {
-  display: block;
+.form-style {
+  text-align: center;
+  
+}
+.form-description {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+textarea {
+  resize: none;
+  width: 55%;
+  height: 150px;
+  margin: 0px;
+}
+
+input {
+  width: 55%;
+}
+
+label {
+  text-align: left;
+  width:55%;
+  margin: 10px 0;
+}
+
+.dropdown-select {
+  margin-right: 50%;
+  width: 5%;
+  letter-spacing: 2px;
 }
 
 /* Contact Me */
+
 .copyright {
   margin-right: auto;
   margin-left: 5%;
 }
+
 .contact-icons {
   display: flex;
   justify-content: flex-end;
   margin-right: 4%;
-  color: #98CCD4;
   align-items: flex-end;
   
 }
 
 .contact-icons i {
+  color: #98CCD4;
   padding: 10px;
 }
 
@@ -107,3 +157,4 @@ p {
    
 }
 
+/* Cross platform sizing  */
