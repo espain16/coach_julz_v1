@@ -14,21 +14,15 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <!-- Google Fonts -->
-  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
-  <div class="logo">
-    <i class="fas fa-angle-double-left"></i>
-    <span>EFP</span>
-  </div>
-  <div class="mini-nav">
-    <i class="fas fa-building"></i>
-    <h3 class="icon-title">Business Hours</h3>
-    <span>Mon - Fri: 9am - 6pm</span>
-  </div>
-<!-- Navigation -->
-  <nav>
+<!-- Landing Page -->
+
+<section id="landing-pg">
+  <nav class="nav-bar">
     <ul>
       <li><a href="">Home</a></li>
       <li><a href="">Services</a></li>
@@ -37,18 +31,18 @@
       <li><a href="">Contact</a></li>
     </ul>
   </nav>
-  <!-- Landing Page -->
-  <section id="landing-pg">
     <img src="" alt="">
-    <h1>The ...</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur repellat facere perspiciatis perferendis quibusdam vitae esse animi, at ratione nemo, facilis reiciendis commodi veritatis iste velit excepturi nam. Iste?</p>
-    <button class="cta">Our ...</button>
-    <hr>
+    <h1 class="cta-header">We Are Awesome</h1>
+    <p class="cta-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur repellat facere perspiciatis perferendis quibusdam vitae esse animi, at ratione nemo, facilis reiciendis commodi veritatis iste velit excepturi nam. Iste?</p>
+    <button class="cta">Click Me</button>
+    <!-- <hr> -->
+    <i class="fas fa-angle-double-down dbl-chevron "></i>
   </section>
 
-  <span>Arrow goes here</span>
+  
   <!-- Services -->
-  <section>
+  <section id="services">
+    <h2>Services</h2>
     <div class="services-card">
       <img>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint, nemo laborum sequi beatae ullam reiciendis praesentium?
@@ -65,34 +59,56 @@
       </p>
     </div>
   </section>
+
   <!-- About Us -->
-  <section>
+  <section id="about-us">
+    <h2 class="about-title">About Us</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, placeat. Non at ipsum amet enim unde voluptate magnam sint odit vero esse. Assumenda voluptate excepturi ut! Modi dolorem reprehenderit doloremque?
     </p>
   </section>
+
   <!-- Contact Info / Form -->
+
   <section class="contact">
-    <div class="contact-us">
+    <div class="contact-us column1">
       <h2>Contact</h2>
-      <i class="fas fa-phone-alt"></i>
-      <span>916-500-4986</span>
-      <h3>Follow</h3>
-      <ul class="icon-container">
-        <li><i class="fab fa-instagram"></i></i></li>
-        <li><i class="fab fa-facebook-f"></i></li>
-      </ul>
+        <span class="fa-stack fa-3x">
+          <i class="fa fa-circle fa-stack-2x icon-background"></i>
+          <i class="fas fa-phone-alt contact-icons fa-stack-1x"></i>
+        </span>
+        <h5 class="icon-titles">phone</h5>
+        <p>916-500-4986</p>
+        <span class="fa-stack fa-3x">
+          <i class="fa fa-circle fa-stack-2x icon-background"></i>
+          <i class="far fa-envelope fa-stack-1x"></i>
+        </span>
+        <h5 class="icon-titles">email</h5>
+        <p>info.elite@gmail.com</p>
+        <span class="fa-stack fa-3x">
+          <i class="fa fa-circle fa-stack-2x icon-background"></i>
+          <i class="fab fa-facebook-f fa-stack-1x"></i>
+        </span>
+        <h5 class="icon-titles">Connect with us</h5>
+        <p>Elite Financial Professionals</p>
     </div>
-    <form class="form-container">
-      <input class="form-field" type="text" placeholder=" First Name">
-      <input class="form-field" type="text" placeholder="Last Name">
-      <input class="form-field" type="text" placeholder="Email">
-      <input class="form-field" type="text" placeholder="Phone Number">
-      <label>Comments:</label>
-      <textarea class="form-field"></textarea>
-      <button class="form-btn">Submit</button>
-    </form>
+    <div class="column2">
+      <h2 class="form-title">Get in touch</h2>
+      <form class="form-container">
+        <input class="form-field" type="text" placeholder=" First Name">
+        <input class="form-field" type="text" placeholder="Last Name">
+        <input class="form-field" type="text" placeholder="Email">
+        <input class="form-field" type="text" placeholder="Phone Number">
+        <label>Comments:</label>
+        <textarea class="form-field"></textarea>
+        <button class="form-btn">Submit</button>
+      </form>
+    </div>
   </section>
+  <footer>
+
+  </footer>
+
 </body>
 </html>
 
