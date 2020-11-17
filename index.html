@@ -14,7 +14,8 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
 
 </head>
@@ -22,55 +23,131 @@
 <!-- Landing Page -->
 
 <section id="landing-pg">
-  <nav class="nav-bar">
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Resources</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </nav>
-    <img src="" alt="">
-    <h1 class="cta-header">We Are Awesome</h1>
-    <p class="cta-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur repellat facere perspiciatis perferendis quibusdam vitae esse animi, at ratione nemo, facilis reiciendis commodi veritatis iste velit excepturi nam. Iste?</p>
-    <button class="cta">Click Me</button>
-    <!-- <hr> -->
-    <i class="fas fa-angle-double-down dbl-chevron "></i>
+
+  <div>
+    <div class="logo-container">
+      <img src="/images/Elite-Fin-Logo.png" alt="Elite Financial Logo" class="logo">
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="img-container">
+    <img class="landing-pg-img"src="/images/partner-julia.jpg" alt="business woman on a bench">
+  </div>
+  <div class="text-overlay">
+      <h1 class="cta-header cta-info">Elite Financial Professionals</h1>
+      <p class="cta-p cta-info">We customize  individual  financial tax-advantaged strategies for families, individuals, and small business owners to ensure your immediate and future financial goals are reached.</p>
+      <a class="cta" href="#contact-form">Get In Touch</a>
+  </div>
+    <div class="chevron-container">
+      <i class="fas fa-angle-double-down dbl-chevron"></i>
+    </div>
   </section>
 
   
   <!-- Services -->
   <section id="services">
     <h2>Services</h2>
-    <div class="services-card">
-      <img>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint, nemo laborum sequi beatae ullam reiciendis praesentium?
-      </p>
-    </div>
-    <div class="services-card">
-      <img>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint, nemo laborum sequi beatae ullam reiciendis praesentium?
-      </p>
-    </div>
-    <div class="services-card">
-      <img>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint, nemo laborum sequi beatae ullam reiciendis praesentium?
-      </p>
+    <div class="services-wrapper">
+      <div class="services-card card1">
+        <h4 class="service-title">Tax-advantage Investments and financial planning</h4>
+        
+        <p class="service-description">We help you take advantage of tax-free investing strategies used by the wealthy to your own financial plan that will help you increase your wealth now and for future retirement. 
+        </p>
+      </div>
+      <div class="services-card card2">
+        <h4 class="service-title">Retirement Planning </h4>
+        
+        <p class="service-description">People’s biggest fear is running out of money in retirement, we plan out the path to get you exactly where you need to be financially so you never out live your money and you maintain your current lifestyle.
+        </p>
+      </div>
+      <div class="services-card card3">
+        <h4 class="service-title">Annuities, Life and Disability Insurance</h4>
+        
+        <p class="service-description">We sell life insurance annuities and disability insurance all to help you protect your assets, increase your wealth and protect your family.
+        </p>
+      </div>
     </div>
   </section>
 
+  <!-- Resources -->
+  <section id="resources">
+    <h2>Resources</h2>
+    <div class="resources-wrapper">
+      <div class="tax-now tax-item tax-item1">
+        <img src="/images/tax-cut.png" alt="money being cut with scissors icon">
+        <h4>Tax Now</h4>
+        <p>Taxes are paid on interest, earnings and dividends every single year.</p>
+      </div>
+      <div class="tax-later tax-item tax-item2">
+        <img src="/images/pocket-watch.png" alt="stop watch icon">
+        <h4>Tax Later</h4>
+        <p>Taxes are paid when you start taking distributions.</p>
+      </div>
+      <div class="tax-never tax-item tax-item3">
+        <img src="/images/coin-in-hand.png" alt="coin in hand icon">
+        <h4>Tax Advantage</h4>
+        <p> Taxes are not accrued or owed on earnings and distributions, ever.</p>
+      </div>
+      <div class="tax-compound tax-item-lg">
+        <img src="/images/growing-mooney.png" alt="coin growing out pot icon">
+        <h4>How Compounding Interest Works</h4>
+        <p>The power of compound interest refers to the growth potential of money over time by leveraging the magic of “compounding.” It’s interest earning on top of the principal plus the accumulated interest from previous periods.</p>
+      </div>
+    </div>
+
+  </section>
   <!-- About Us -->
   <section id="about-us">
     <h2 class="about-title">About Us</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, placeat. Non at ipsum amet enim unde voluptate magnam sint odit vero esse. Assumenda voluptate excepturi ut! Modi dolorem reprehenderit doloremque?
-    </p>
+    <div class="bio-wrapper">
+      <div class="img-nathan">
+        <img src="images/nathan-headshot.jpg" class="headshots" alt="business man headshot">
+      </div>
+      <div class="bio-nathan bios">
+        <h4 class="bio-title">Nathan Johnson</h4>
+        <p>
+          Nathan has a strong purpose for helping educate people how to succeed in life as a licensed and certified Life, Health, Medicare and Annuity agent. He brings over 30 years experience in running the finances of a successful San Francisco construction company. Also he has been working as a professional trainer in the field of communication for over 35 years and has taught thousands of people how to improve relationships and their life skills. With this background he brings a unique approach to educating his clients in improving their financial condition as a licensed agent in the financial services field.
+        </p>
+        <p>
+          When he isn’t helping people with their finances, for the past 12 years Nathan has been an ice hockey official for many levels of ice hockey from youth to college to adult recreation leagues. This has taught him how to deal with challenging situations and stay calm, cool and collected.
+        </p>
+        <p> 
+          He is ready to help you with any challenging situations you need assistance with.
+        </p>
+      </div>
+      <div class="img-julia">
+        <img src="/images/julia-headhsot.jpg" alt="business women headshot" class="headshots">
+      </div>
+      <div class="bio-julia bios">
+        <h4 class="bio-title">Julia Allender</h4>
+        <p>
+          Julz (Julia) Allender has been a top-performing professional in many different sectors of business and performance over the last 15 years. She is a licensed and certified Life, Health and Annuity agent representing a number of the top financial companies in the country.
+        </p>
+        <p>
+          Prior to coming into the financial professional industry, Julz spent 10 years as a collegiate basketball head coach where her teams achieved tremendous success but what was more impressive was the individual success each player had on and off the court. Julz took the time to coach each player to flourish beyond their potential level in their own lives.
+        </p>  
+        <p>
+          Julz also spent four years as a professional Human Resources specialist in the training and development of individual employees for their specified positions and ensured each one succeeded.
+        </p> 
+        <p>
+          "I coach individuals and families on their finances and educate them about the significant variables of how money and tax-advantage strategies work so that they can profit financially now and in the future. I get you to achieve your big financial wins. My passion is to help others and get them to accomplish financial and life goals for themselves and their loved ones.
+          I can guarantee you nobody will coach you better on your finances than me."
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Info / Form -->
 
-  <section class="contact">
+  <section id="contact-form"class="contact">
     <div class="contact-us column1">
       <h2>Contact</h2>
         <span class="fa-stack fa-3x">
@@ -84,7 +161,7 @@
           <i class="far fa-envelope fa-stack-1x"></i>
         </span>
         <h5 class="icon-titles">email</h5>
-        <p>info.elite@gmail.com</p>
+        <p>info.elitefp@gmail.com</p>
         <span class="fa-stack fa-3x">
           <i class="fa fa-circle fa-stack-2x icon-background"></i>
           <i class="fab fa-facebook-f fa-stack-1x"></i>
@@ -94,20 +171,18 @@
     </div>
     <div class="column2">
       <h2 class="form-title">Get in touch</h2>
-      <form class="form-container">
-        <input class="form-field" type="text" placeholder=" First Name">
-        <input class="form-field" type="text" placeholder="Last Name">
-        <input class="form-field" type="text" placeholder="Email">
-        <input class="form-field" type="text" placeholder="Phone Number">
+      <form class="form-container" action="https://getform.io/f/461a1eac-33fe-40bc-9d64-2b32dc17481b" method="POST" enctype="multipart/form-data">
+        <input class="form-field" type="text" placeholder="First Name" name="first name">
+        <input class="form-field" type="text" placeholder="Last Name" name="last name">
+        <input class="form-field" type="email" placeholder="Email" name="email">
+        <input class="form-field" type="number" placeholder="Phone Number" name="number">
         <label>Comments:</label>
-        <textarea class="form-field"></textarea>
-        <button class="form-btn">Submit</button>
+        <textarea class="form-field" name="message"></textarea>
+        <button class="form-btn" type="submit">Submit</button>
       </form>
     </div>
   </section>
-  <footer>
-
-  </footer>
+  
 
 </body>
 </html>
