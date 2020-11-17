@@ -1,6 +1,9 @@
 /* General Styles */
 body{
   box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 ul{
   list-style: none;
@@ -15,18 +18,133 @@ a{
 button {
   cursor: pointer;
 }
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+}
+h2 h4 {
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.1px;
+  margin: 8% 0%;
+}
 
 /* Landing Page */
 
-/* Contact Card */
-.contact-us {
-  background: #011056;
+.cta{
+  background-color: #153078;
+  border-radius: 3px;
   color: #fff;
+  border: none;
+  width: 40%;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  
 }
-.icon-container {
+
+/* About Us Section */
+
+#about-us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  margin: auto 0;
+  background-color: #E1EEEF;
+  
+  
+}
+.bio-title {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 18px;
+}
+
+/* Services Section */
+
+.services-card p {
+  text-align: center;
+  padding: 10px;
+}
+
+.services-wrapper {
   display: flex;
 }
+.service-title {
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+.service-description {
+  font-size: 14px;
+  padding: 12px;
+}
+
+.services-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15px;
+  height:400px;
+  width: 350px;
+  border-radius: 4px;
+  box-shadow: 8px 10px 11px 0px rgba(224,224,224,1);
+}
+
+.card1 {
+  background-color: #E1EEEF;
+}
+.card2 {
+  background-color: #C2D8E4;
+}
+.card3 {
+  background-color: #A2BCE3;
+}
+
+/* Resources */
+.tax-item {
+  height: 180px;
+  width: 520px;
+  background-color: #d7d7d7;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.tax-item h4 {
+  margin-bottom: 0px;
+}
+.tax-item p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* Contact Card */
+
+.contact-us {
+  background: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.icon-background {
+  color: #a7a7a7;
+}
+.icon-titles{
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
 /* Form Layout */
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -36,12 +154,15 @@ button {
   background: #121916;
   color: #fff;
   height: 45px;
-  width: 120px;
+  width: 175px;
   letter-spacing: 1.2px;
   border-radius: 4px;
   border: none;
- margin-top: 25px;
- align-self: flex-end;
+  margin-top: 25px;
+  align-self: flex-end;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.2px;
 }
 .form-field {
   border-radius: 4px;
@@ -51,15 +172,274 @@ button {
 }
 
 .form-field:focus{
-  outline: 2px solid #63BBF2;
-  box-shadow:0 0 3pt 4pt #63BBF2; 
+  outline: 2px solid #192270;
+  box-shadow:0 0 3pt 4pt #192270; 
   border:none;
 }
 
-/* Mobile First Approach */
-@media(max-width: 600px) {
-  
+.form-title {
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
 
+/* Mobile First Approach */
+@media(max-width: 800px) {
+
+  /* Landing Page  */
+  .logo-container {
+    margin-right: 65%;
+    margin-top: 5%;
+  }
+  .logo {
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+  }
+  nav {
+    display: none;
+  }
+
+  #landing-pg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .landing-pg-img {
+    display: none;
+  }
+  .text-overlay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-header{
+    margin-top: 35%;
+  }
+  
+  .cta-p{
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .cta {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dbl-chevron {
+    cursor: pointer;
+    margin-top: 170%;
+    font-size: 40px; 
+  }
+
+  /* Services */
+
+  .services-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-card {
+    width: 300px;
+    margin: 10px 0;
+  }
+  /* Resources */
+  .resources-wrapper {
+    display: grid;
+    justify-items: center;
+  }
+  .tax-item {
+    margin: 10px 0px;
+    width: 85%;
+    background-color: #ffffff;
+  }
+  .tax-item2 {
+    text-align: right;
+    background-color: #E1EEEF;
+    padding: 10px;
+  }
+  .tax-item-lg {
+    padding: 12px;
+    text-align: center;
+    margin: 10% 0%;
+    
+  }
+  .tax-item-lg h4 {
+    text-align: center;
+  }
+  /* About Us Styles */
+  .headshots {
+    height: 355px;
+    border-radius: 5px;
+  }
+  .bio-wrapper {
+    display: grid;
+  }
+  
+  .bios {
+    text-align: left;
+    padding: 5%;
+
+  }
+  
   /* Contact */
+ 
+  
+  /* Form Styles */
+  .form-title {
+    text-transform: uppercase;
+    padding: 10px;
+  }
+}
+
+@media(min-width:801px){
+  /* Landing Section */
+  .logo-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .logo {
+    padding-right: 25px;
+    padding-top: 25px;
+  }
+  .nav-bar ul{
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 35px;
+  }
+  .nav-bar a {
+    margin-left: 20px;
+  }
+  .nav-bar a:hover {
+    border-top: 2px solid lightskyblue;
+  }
+ 
+  .img-container img{
+    width: 60% ;
+    position: relative;
+    left: 40%;
+    z-index: 1;
+  }
+  .text-overlay {
+    color: #fff;
+    width: 40%;
+    padding: 5%;
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    z-index: 4;
+    background-color: #16386A;
+  }
+
+  .cta {
+    margin-top: 10px;
+    background-color: #121916;
+    box-shadow: none;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .cta-p {
+    margin-bottom: 50px;
+  }
+  .chevron-container {
+    display: none;
+  }
+
+  /* Services Section */
+
+  .services-wrapper {
+   justify-content: center;
+  }
+  #services h2 {
+    margin-top: 120px;
+  }
+  /* Resources */
+  #resources {
+    margin-bottom: 10%;
+  }
+  .resources-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .tax-item {
+    width: 76%;
+  }
+  .tax-item img {
+    margin-top: 25px;
+  }
+  .tax-item-lg {
+    grid-area: 1 / 2 / 4 / 3;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tax-item-lg img {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* About Section */
+  .about-title {
+    margin: 4% 0;
+  }
+  .headshot {
+    height: 415px;
+  }
+  
+  .bio-wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    row-gap: 125px;
+  }
+  .img-nathan {
+    grid-area: 1 / 1 / 2 /2;
+  }
+  .bios {
+    text-align: left;
+    padding: 5%;
+  }
+  .bio-nathan {
+    grid-area: 1 / 2 / 2/ 2 ;
+  }
+  .bio-julia {
+    grid-area: 2/ 1 / 2 / 2;
+    margin-bottom: 40px;
+  }
+  .img-julia {
+    margin-bottom: 40px;
+  }
+  /* Contact Info / Form Section */
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+  }
+  .column1 {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+  .column2 {
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 4; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  
   
 }
