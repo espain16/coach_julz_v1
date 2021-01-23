@@ -169,22 +169,16 @@
     <div class="column2">
       <h2 class="form-title">Get in touch</h2>
       <form class="form-container" action="https://getform.io/f/461a1eac-33fe-40bc-9d64-2b32dc17481b" method="POST" enctype="multipart/form-data">
-        <label htmlFor="First name">
-        </label>
-        <input class="form-field" type="text" placeholder="First Name" name="first name">
-
-        <label htmlFor="Last name">
-        </label>
-        <input class="form-field" type="text" placeholder="Last Name" name="last name">
-        <label htmlFor="Email">
-        </label>
-        <input class="form-field" type="email" placeholder="Email" name="email">
-        <label htmlFor="phone-number">
-        </label>
-        <input class="form-field" type="phone-number" placeholder="Phone Number" name="phone-number">
-        
+        <label htmlFor="First name"></label>
+        <input id="first"class="form-field" type="text" placeholder="First Name" name="first name" required>
+        <label htmlFor="Last name"></label>
+        <input id="last" class="form-field" type="text" placeholder="Last Name" name="last name" required>
+        <label htmlFor="Email"></label>
+        <input id="email" class="form-field" type="email" placeholder="Email" name="email" required>
+        <label htmlFor="phone-number"></label>
+        <input id="number" class="form-field" type="phone-number" placeholder="Phone Number" name="phone-number" required>
         <label for="comment-field">Comments:</label>
-        <textarea id="comment-field"class="form-field" name="message"></textarea>
+        <textarea id="comment-field"class="form-field" name="message" ></textarea>
         <button class="form-btn" type="submit">Submit</button>
       </form>
     </div>

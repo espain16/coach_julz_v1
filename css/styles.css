@@ -169,12 +169,13 @@ h2 {
   border: 2px solid #656D73;
   margin: 10px 0px;
   padding: 10px;
+  /* outline: none; */
 }
 
 .form-field:focus{
-  outline: 2px solid #192270;
-  box-shadow:0 0 3pt 4pt #192270; 
-  border:none;
+  /* outline: 2px solid #192270;
+  box-shadow:0 0 3pt 4pt #192270;  */
+  border: 2px solid #0A395B;
 }
 
 .form-title {
